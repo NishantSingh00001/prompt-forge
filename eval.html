@@ -1,0 +1,17 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Eval — PromptForge</title><meta name="description" content="Run a prompt version against a dataset and score every case.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="shell page">
+  <header class="phead" style="padding-bottom:22px"><div class="eyebrow">Eval run</div><h1 id="pname" style="font-size:clamp(32px,5vw,58px)"></h1><p class="lede" id="pds"></p>
+    <div class="row" style="margin-top:18px"><select class="inp" id="psel" style="max-width:260px"></select><div class="seg" id="vseg"></div></div>
+  </header>
+  <div class="grid2" style="margin-bottom:22px">
+    <div class="card reveal" style="padding:24px"><div class="ch" style="padding:0 0 15px"><h2>Prompt template</h2><span class="k">active version</span></div><div class="codebox" id="tmpl" style="margin-top:14px"></div>
+      <div class="ch" style="padding:22px 0 12px"><h2>Scorers</h2><span class="k">pass rate</span></div><div id="scorers" style="margin-top:10px"></div></div>
+    <div class="col">
+      <div class="card reveal" style="padding:24px;text-align:center"><div class="ch" style="padding:0 0 18px;justify-content:center"><h2 style="justify-content:center">Pass rate</h2></div>
+        <div class="ringwrap"><div class="ring" id="ring"><span class="rv" id="ringv"></span></div></div></div>
+      <div class="bigstats" id="estats" style="grid-template-columns:1fr 1fr"></div>
+    </div>
+  </div>
+  <div class="card reveal" style="padding:24px"><div class="ch" style="padding:0 0 15px"><h2>Per-case results</h2><span class="k">tap to inspect output</span></div><div id="cases" style="margin-top:16px"></div></div>
+</main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>

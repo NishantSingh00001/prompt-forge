@@ -1,0 +1,17 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Playground — PromptForge</title><meta name="description" content="Edit a prompt, fill variables and run it — offline mock or live Gemini.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="shell page">
+  <header class="phead"><div class="eyebrow">Playground</div><h1>Iterate <em>live</em>.</h1><p class="lede">Edit the template, pick a sample input, and see the filled prompt, the response and its scores. Runs on the offline model by default; add a Gemini key for live calls.</p></header>
+  <div class="grid2">
+    <div class="card reveal" style="padding:24px"><div class="ch" style="padding:0 0 15px"><h2>Prompt</h2><span class="k">editable</span></div>
+      <div class="row" style="margin:14px 0"><select class="inp" id="psel" style="max-width:220px"></select><select class="inp" id="inputSel" style="flex:1"></select></div>
+      <textarea class="ta" id="tmplEdit" style="min-height:180px"></textarea>
+      <button class="btn primary" id="runBtn" style="margin-top:14px;width:100%">Run live via Gemini</button>
+      <div class="ch" style="padding:22px 0 10px"><h2>Filled prompt</h2></div><div class="codebox" id="prompted"></div>
+    </div>
+    <div class="col">
+      <div class="card reveal" style="padding:24px"><div class="ch" style="padding:0 0 15px"><h2>Response</h2><span class="k badge" id="srcTag">offline mock model</span></div><div class="iobox" id="output" style="margin-top:14px;min-height:80px"></div><div id="pgscores" style="margin-top:12px"></div></div>
+      <div class="card reveal" style="padding:24px"><div class="ch" style="padding:0 0 10px"><h2>Readout</h2></div><div id="pgkv" style="margin-top:8px"></div></div>
+    </div>
+  </div>
+</main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>

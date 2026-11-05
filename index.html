@@ -1,0 +1,13 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>PromptForge — CI for your prompts</title><meta name="description" content="Treat prompts like code: versioned prompts, test datasets, real scorers, pass rates and regression diffs. Stop shipping prompt changes blind.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="home">
+  <section class="hero2"><div class="hero2-in">
+    <div class="hero2-copy reveal"><div class="kicker">LLM prompt evaluation</div><h1>CI for your <em>prompts</em>.</h1><p>You'd never ship code without tests — yet prompt changes go out on vibes. PromptForge versions every prompt, scores it against a dataset with real metrics, and shows you exactly which cases a change fixed and which it broke.</p><div class="cta-row"><a class="btn-xl" href="eval.html" data-mag>Run an eval</a><a class="btn-ghost" href="diff.html">compare two versions</a></div><div class="metastrip" id="meta"></div></div>
+    <div class="hero2-visual reveal"><canvas id="hero3d"></canvas></div>
+  </div></section>
+  <div class="marquee2"><div class="marq-track" id="marq"></div></div>
+  <section class="feat2"><div class="feat2-head reveal"><h2>Measure, don't guess.</h2><p>Four prompts, four datasets, six real scorers — every result computed on-device.</p></div><div class="feat2-grid" id="fgrid"></div></section>
+  <section class="cta2"><div class="cta2-in reveal"><h2>Know before you <em>ship</em>.</h2><a class="btn-xl" href="eval.html" data-mag>Run your first eval</a></div></section>
+  <div class="foot">PromptForge · versioned prompts · real scorers · regression diffs — 100% offline, optional Gemini for live runs</div>
+  <div class="feat" id="featlist"></div>
+</main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>
